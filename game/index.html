@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Gilded Archive — a stealth game</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <header class="bar">
+        <h1>The Gilded Archive</h1>
+        <div class="hud">
+          <span id="hud-shards">Charts 0 / 3</span>
+          <span id="hud-eye" class="eye" title="Suspicion 0%">
+            <span id="hud-eye-fill"></span>
+          </span>
+          <span id="hud-timer">0:00</span>
+          <span id="hud-alert" class="alert">UNSEEN</span>
+        </div>
+      </header>
+      <canvas id="game" width="960" height="576"></canvas>
+      <p id="hud-hint" class="hint">
+        WASD / arrows to move · Shift to sneak · F to hurry (loud) · click to walk · R restarts · M mutes
+      </p>
+    </main>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
