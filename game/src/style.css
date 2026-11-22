@@ -1,0 +1,84 @@
+/* The Gilded Archive: a dark hall, brass trim, parchment text. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0c0a08;
+  color: #f2ead8;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.stage {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.bar h1 {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #d8b25c;
+}
+
+.hud {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+}
+
+.eye {
+  display: inline-block;
+  width: 120px;
+  height: 12px;
+  border: 1px solid #d8b25c;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #1a1712;
+}
+
+.eye span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #ffd86e;
+}
+
+.alert {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #37d67a;
+}
+
+.alert.on {
+  color: #ff5040;
+}
+
+#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 12px;
+  border: 2px solid #5d5348;
+  background: #14100c;
+  cursor: crosshair;
+}
+
+.hint {
+  margin: 10px 0 0;
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+  color: #b8ad96;
+}
